@@ -1,0 +1,75 @@
+.App {
+  width: 840px;
+  margin: 40px auto;
+  font-family: sans-serif;
+}
+
+p {
+  display: inline-block;
+}
+
+.notes-title p {
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.notes-title button {
+  padding: 0 6px;
+  font-size: 30px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  color: #66bb6a;
+}
+
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-gap: 40px;
+  margin-bottom: 40px;
+}
+
+.note-item {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+.note-item__delete-btn {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background: #fff;
+  color: red;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.note-form {
+  position: relative;
+  width: 390px;
+}
+
+.note-form textarea {
+  resize: none;
+}
+
+.note-form__submit {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 6px 7px;
+  font-weight: bold;
+  background: none;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  cursor: pointer;
+}
